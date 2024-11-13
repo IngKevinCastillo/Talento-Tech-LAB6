@@ -1,0 +1,204 @@
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>code .
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git init
+Initialized empty Git repository in C:/Users/kevin/Downloads/Talento Tech/Clase 3/Laboratorio 6/.git/
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git init
+Reinitialized existing Git repository in C:/Users/kevin/Downloads/Talento Tech/Clase 3/Laboratorio 6/.git/
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>clear
+"clear" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>clear
+"clear" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git init
+Reinitialized existing Git repository in C:/Users/kevin/Downloads/Talento Tech/Clase 3/Laboratorio 6/.git/
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git add index.html
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git commit -m "Acabo de subir el archivo y es de version 1 y es de tipo index.html"
+[master (root-commit) 639e4c1] Acabo de subir el archivo y es de version 1 y es de tipo index.html
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.html
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git add .
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git commit -m "Nueva version desarrollada"
+[master 3e10d86] Nueva version desarrollada
+ 1 file changed, 2 insertions(+)
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git log
+commit 3e10d864fc466bfcae17470000b889b26f54e82c (HEAD -> master)
+Author: Kevin Andres Castillo Guerrero <kevincastllo24@gmail.com>
+Date:   Tue Nov 12 22:04:56 2024 -0500
+
+    Nueva version desarrollada
+
+commit 639e4c1ea5381fc1201e4089d889eafa01fdbe31
+Author: Kevin Andres Castillo Guerrero <kevincastllo24@gmail.com>
+Date:   Tue Nov 12 21:59:31 2024 -0500
+
+    Acabo de subir el archivo y es de version 1 y es de tipo index.html
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git branch
+* master
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git branch Rama-Secundaria
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git branch
+  Rama-Secundaria
+* master
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git checkout Rama-Secundaria
+Switched to branch 'Rama-Secundaria'
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git bracnch
+git: 'bracnch' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git branch
+* Rama-Secundaria
+  master
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git status
+On branch Rama-Secundaria
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git add .
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git status
+On branch Rama-Secundaria
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git commit -m "Version 3 desarrollada y con rama nueva"
+[Rama-Secundaria 37d018c] Version 3 desarrollada y con rama nueva
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git log
+commit 37d018cae488573f54af5d19786c82396faeb68e (HEAD -> Rama-Secundaria)
+Author: Kevin Andres Castillo Guerrero <kevincastllo24@gmail.com>
+Date:   Tue Nov 12 22:12:20 2024 -0500
+
+    Version 3 desarrollada y con rama nueva
+
+commit 3e10d864fc466bfcae17470000b889b26f54e82c (master)
+Author: Kevin Andres Castillo Guerrero <kevincastllo24@gmail.com>
+Date:   Tue Nov 12 22:04:56 2024 -0500
+
+    Nueva version desarrollada
+
+commit 639e4c1ea5381fc1201e4089d889eafa01fdbe31
+Author: Kevin Andres Castillo Guerrero <kevincastllo24@gmail.com>
+Date:   Tue Nov 12 21:59:31 2024 -0500
+
+    Acabo de subir el archivo y es de version 1 y es de tipo index.html
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git checkout master
+Switched to branch 'master'
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git branch
+  Rama-Secundaria
+* master
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git merge Rama-Secundaria
+Updating 3e10d86..37d018c
+Fast-forward
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>code .
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git log
+commit 37d018cae488573f54af5d19786c82396faeb68e (HEAD -> master, Rama-Secundaria)
+Author: Kevin Andres Castillo Guerrero <kevincastllo24@gmail.com>
+Date:   Tue Nov 12 22:12:20 2024 -0500
+
+    Version 3 desarrollada y con rama nueva
+
+commit 3e10d864fc466bfcae17470000b889b26f54e82c
+Author: Kevin Andres Castillo Guerrero <kevincastllo24@gmail.com>
+Date:   Tue Nov 12 22:04:56 2024 -0500
+
+    Nueva version desarrollada
+
+commit 639e4c1ea5381fc1201e4089d889eafa01fdbe31
+Author: Kevin Andres Castillo Guerrero <kevincastllo24@gmail.com>
+Date:   Tue Nov 12 21:59:31 2024 -0500
+
+    Acabo de subir el archivo y es de version 1 y es de tipo index.html
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git remote add origin https://github.com/IngKevinCastillo/Talento-Tech-LAB6.git
+
+C:\Users\kevin\Downloads\Talento Tech\Clase 3\Laboratorio 6>git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.02 KiB | 209.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/IngKevinCastillo/Talento-Tech-LAB6.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
